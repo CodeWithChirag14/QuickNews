@@ -6,6 +6,7 @@ import News from './components/News';
 import LoadingBar from 'react-top-loading-bar'
 
 import {
+  HashRouter,
   Routes,
   Route
 
@@ -33,6 +34,7 @@ export default class App extends Component {
   render() {
     
     return (
+      <HashRouter basename='/'>
       <div>
     
         <NavBar/>
@@ -58,8 +60,10 @@ export default class App extends Component {
 
 
         </Routes>
+        
        
       </div>
+      </HashRouter>
     )
   }
 }
