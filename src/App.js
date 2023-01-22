@@ -34,9 +34,9 @@ export default class App extends Component {
   render() {
     
     return (
-      <HashRouter basename='/'>
+      
       <div>
-    
+        <HashRouter basename='/'>
         <NavBar/>
         <LoadingBar
         height={3}
@@ -61,9 +61,9 @@ export default class App extends Component {
 
         </Routes>
         
-       
+        </HashRouter>
       </div>
-      </HashRouter>
+      
     )
   }
 }
