@@ -6,7 +6,6 @@ import News from './components/News';
 import LoadingBar from 'react-top-loading-bar'
 
 import {
-  BrowserRouter as Router,
   Routes,
   Route
 
@@ -35,7 +34,7 @@ export default class App extends Component {
     
     return (
       <div>
-      <Router>
+    
         <NavBar/>
         <LoadingBar
         height={3}
@@ -59,7 +58,7 @@ export default class App extends Component {
 
 
         </Routes>
-        </Router>
+       
       </div>
     )
   }
